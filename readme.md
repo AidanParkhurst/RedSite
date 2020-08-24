@@ -1,3 +1,3 @@
-Aidan Parkhurst's Personal Website
+# Aidan Parkhurst's Personal Website
 
-Exactly what you'd expect really
+A simple website built on NodeJS using Express and Vue.js

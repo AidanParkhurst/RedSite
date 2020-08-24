@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "My personal site",
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AidanParkhurst/PersonalSite"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aidan Parkhurst",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "vue": "^2.6.12"
   }
 }

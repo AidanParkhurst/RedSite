@@ -1,3 +1,16 @@
 body {
-    background-color: #FFFFF0
+    background-color: #ede9df
+}
+
+h1 {
+    font-family: PT Sans Narrow, Arial;
+    color: #2a4a4a;
+    font-size: 5em;
+    text-align: center;
+    margin-top: 1em;
+}
+h2 {
+    font-family: Open Sans, Arial;
+    color: #2a4a4a;
+    text-align: center;
 }
