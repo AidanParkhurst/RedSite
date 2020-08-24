@@ -24,7 +24,6 @@ ul {
 
 li {
     display: inline-block;
-    padding: 0.75rem 0;
     margin: 0.5em;
     font-size: 1.5vw;
     font-weight: bold;
@@ -42,25 +41,17 @@ li {
     margin-left: 17.5vw;
 }
 
-hr.first {
+hr {
     height: 0rem;
     width: 7vw;
+    transition: .2s ease-in-out;
     margin: 0;
-    transition: .3s ease-in-out;
 }
 hr.second {
-    height: 0rem;
-    width: 7vw;
-    margin: 0;
     margin-left: 8.5vw;
-    transition: .3s ease-in-out;
 }
 hr.third {
-    height: 0rem;
-    width: 7vw;
-    margin: 0;
     margin-left: 17.5vw;
-    transition: .3s ease-in-out;
 }
 
 /* Current info box */
