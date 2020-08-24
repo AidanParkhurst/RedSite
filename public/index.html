@@ -5,9 +5,34 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow">
         <link rel="stylesheet" href="main.css">
     </head>
+
     <body>
         <h1>Aidan Parkhurst</h1>
     
-        <h2>Student, Programmer, Educator</h2>
+        <div id="info-selector">
+            <div class="menu">
+                <ul>
+                    <li class="one" v-on:click="current = 0">Student</li>
+                    <li class="two" v-on:click="current = 1">Programmer</li>
+                    <li class="three" v-on:click="current = 2">Educator</li>
+                    <hr class="first" v-if="current === 0"/>
+                    <hr class="second" v-if="current === 1"/>
+                    <hr class="third" v-if="current === 2"/>
+                 </ul>
+            </div>
+    
+            <div class="info" v-if="current === 0">
+                The first example!
+            </div>
+            <div class="info" v-if="current === 1">
+                This is a different example
+            </div>
+            <div class="info" v-if="current === 2">
+                This is the final example
+            </div>
+        </div>
     </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
 </html>
