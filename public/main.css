@@ -11,6 +11,17 @@ h1 {
     margin-bottom: 0;
 }
 
+h2 {
+    font-family: Open Sans;
+    font-size: 1.3vw;
+    color: #2a4a4a;
+    text-align: center;
+}
+
+a {
+    color: #2a4a4a;
+}
+
 /* Menu and sliding underline */
 div.menu {
     width: 25vw;

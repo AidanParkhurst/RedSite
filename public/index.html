@@ -14,7 +14,7 @@
                 <ul>
                     <li class="one" v-on:click="current = 0">Student</li>
                     <li class="two" v-on:click="current = 1">Programmer</li>
-                    <li class="three" v-on:click="current = 2">Educator</li>
+                    <li class="three" v-on:click="current = 2">Contact</li>
                     <!--Three underlines, each can move but returns "home" to a specific option-->
                     <hr class="first" v-if="current === 0"/>
                     <hr class="second" v-if="current === 1"/>
@@ -23,13 +23,17 @@
             </div>
     
             <div class="info" v-if="current === 0">
-                The first example!
+                <h2>
+                    Student at the <a href="https://bcts.bergen.org/" target="_blank">Bergen County Academies</a><br>
+                    Academy for Technology and Computer Science<br>
+                    2017-2021
+                </h2>
             </div>
             <div class="info" v-if="current === 1">
-                This is a different example
+                <h2>This is a different example</h2>
             </div>
             <div class="info" v-if="current === 2">
-                This is the final example
+                <h2>This is the final example</h2>
             </div>
         </div>
     </body>
