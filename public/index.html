@@ -10,6 +10,8 @@
         <h1>Aidan Parkhurst</h1>
     
         <div id="info-selector">
+
+            <!--Menu and Moving Underline-->
             <div class="menu">
                 <ul>
                     <li class="one" v-on:click="current = 0">Student</li>
@@ -21,7 +23,8 @@
                     <hr class="third" v-if="current === 2"/>
                  </ul>
             </div>
-    
+
+            <!--Student Tab-->
             <div class="info" v-if="current === 0">
                 <h2>
                     Student at the <a href="https://bcts.bergen.org/" target="_blank">Bergen County Academies</a><br>
@@ -29,11 +32,26 @@
                     2017-2021
                 </h2>
             </div>
+
+            <!--Programmer Tab-->
             <div class="info" v-if="current === 1">
-                <h2>This is a different example</h2>
+                <h2>
+                    <a href="https://www.codeninjas.com/" target="_blank">Code Ninjas</a> Instructor<br>
+                    
+                    PHP Developer for BCA Student Dashboard<br>
+                    
+                    <a href="https://bccls.libcal.com/event/6114184" target="_blank">Volunteer Teacher</a> for
+                    <a href="https://www.hasbrouckheightslibrary.org/" target="_blank">HH Library</a><br>
+                    Passionate Personal Researcher<br>
+                    <a href="Resume.pdf" download>Resume</a>
+                </h2>
             </div>
+            
+            <!--Contact Tab-->
             <div class="info" v-if="current === 2">
-                <h2>This is the final example</h2>
+                <h2>
+                    aidanparkhurst@gmail.com<br>
+                </h2>
             </div>
         </div>
     </body>

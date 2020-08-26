@@ -5,7 +5,7 @@ body {
 h1 {
     font-family: PT Sans Narrow;
     color: #2a4a4a;
-    font-size: 5em;
+    font-size: 5vw;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 0;
@@ -54,7 +54,7 @@ li {
 
 hr {
     height: 0rem;
-    width: 7vw;
+    width: 6.8vw;
     transition: .2s ease-in-out;
     margin: 0;
 }
