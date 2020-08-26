@@ -1,3 +1,3 @@
 # Aidan Parkhurst's Personal Website
 
-A simple website built on NodeJS using Express and Vue.js
+A simple website built using Vue.js, tested locally on NodeJS with Express
