@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <h1>Aidan Parkhurst</h1>
+    
+        <div id="info-selector">
+
+            <!--Menu and Moving Underline-->
+            <div class="menu">
+                <ul>
+                    <li class="one" v-on:click="current = 0">Student</li>
+                    <li class="two" v-on:click="current = 1">Programmer</li>
+                    <li class="three" v-on:click="current = 2">Contact</li>
+                    <!--Three underlines, each can move but returns "home" to a specific option-->
+                    <hr class="first" v-if="current === 0"/>
+                    <hr class="second" v-if="current === 1"/>
+                    <hr class="third" v-if="current === 2"/>
+                 </ul>
+            </div>
+
+            <!--Student Tab-->
+            <div class="info" v-if="current === 0">
+                <h2>
+                    Student at the <a href="https://bcts.bergen.org/" target="_blank">Bergen County Academies</a><br>
+                    Academy for Technology and Computer Science<br>
+                    2017-2021
+                </h2>
+            </div>
+
+            <!--Programmer Tab-->
+            <div class="info" v-if="current === 1">
+                <h2>
+                    <a href="https://www.codeninjas.com/" target="_blank">Code Ninjas</a> Instructor<br>
+                    
+                    PHP Developer for BCA Student Dashboard<br>
+                    
+                    <a href="https://bccls.libcal.com/event/6114184" target="_blank">Volunteer Teacher</a> for
+                    <a href="https://www.hasbrouckheightslibrary.org/" target="_blank">HH Library</a><br>
+                    Passionate Personal Researcher<br>
+                    <a href="Resume.pdf" download>Resume</a>
+                </h2>
+            </div>
+            
+            <!--Contact Tab-->
+            <div class="info" v-if="current === 2">
+                <h2>
+                    aidanparkhurst@gmail.com<br>
+                </h2>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
+</html>
