@@ -1,75 +1,57 @@
 body {
-    background-color: #ede9df
+    background-color: #121212;
+}
+
+* {
+  color: #FFFFFF;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
-    font-family: PT Sans Narrow;
-    color: #2a4a4a;
-    font-size: 5vw;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 0;
+  color: #BB86FC;
+  font-family: PT Sans Narrow;
+  font-size: 5vw;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
-h2 {
-    font-family: Open Sans;
-    font-size: 1.3vw;
-    color: #2a4a4a;
-    text-align: center;
+button {
+  padding: 0.3em 0.3em;
+  margin: 0 0.5em;
+  font: normal normal bold 1.5vw Open Sans;
+  border: 1px solid #BB86FC;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  background-color: #121212;
 }
 
-a {
-    color: #2a4a4a;
+button:hover {
+  background-color: #212121;
 }
 
-/* Menu and sliding underline */
-div.menu {
-    width: 25vw;
-    margin: 0 auto;
+div.info {
+  min-width: 35%;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  border: 0.09em solid #BB86FC;
+  text-align: center;
 }
 
 ul {
-    padding: 0;
-    width: 100vw;
+  padding: 0;
+  list-style-type: none;
 }
 
 li {
-    display: inline-block;
-    margin: 0.5em;
-    font-size: 1.5vw;
-    font-weight: bold;
-    font-family: Open Sans;
-    color: #2a4a4a;
+  font: normal normal bold 1.3vw Open Sans;
 }
 
-.one:hover ~ hr {
-    margin-left: 0;
-}
-.two:hover ~ hr {
-    margin-left: 8.5vw;
-}
-.three:hover ~ hr {
-    margin-left: 17.7vw;
-}
-
-hr {
-    height: 0;
-    display: inline-block;
-    width: 6.7vw;
-    transition: .2s ease-in-out;
-    margin: 0;
-}
-hr.second {
-    margin-left: 8.5vw;
-}
-hr.third {
-    margin-left: 17.7vw;
-}
-
-/* Current info box */
-div.info {
-    border-radius: 0.5em;
-    border: 0.09em solid #2a4a4a;
-    margin-left: 35%;
-    margin-right: 35%;
+a {
+  color: #BB86FC;
 }

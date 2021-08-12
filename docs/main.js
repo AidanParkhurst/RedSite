@@ -1,6 +1,7 @@
 const app = new Vue({
-    el: "#info-selector",
-    data: {
-        current: 0
-    }
+  el: "main",
+  data: {
+    current: 0,
+    tabs: ['Student', 'Programmer', 'Contact']
+  }
 })
