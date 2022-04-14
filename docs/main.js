@@ -1,7 +1,8 @@
-const app = new Vue({
-  el: "main",
-  data: {
-    current: 0,
-    tabs: ['Student', 'Programmer', 'Contact']
+Vue.createApp({
+  data() {
+    return {
+      current: 0,
+      tabs: ['Student', 'Programmer', 'Contact']
+    }
   }
-})
+}).mount("#app")
