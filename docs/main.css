@@ -1,57 +1,119 @@
 body {
-    background-color: #121212;
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
 }
 
-* {
-  color: #FFFFFF;
+.nameplate {
+    display: flex;
+    flex-direction: row;
+    gap: 6vw;
+    margin: 0;
+   
+    animation: slideUp ease-in-out 1.4s;
 }
-
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 h1 {
-  color: #BB86FC;
-  font-family: PT Sans Narrow;
-  font-size: 5vw;
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 0;
+    font-family: "Michroma";
+    font-size: 6vw;
+    color: brown;
+    
+    display: inline-block;
+    margin: 0;
 }
 
-button {
-  padding: 0.3em 0.3em;
-  margin: 0 0.5em;
-  font: normal normal bold 1.5vw Open Sans;
-  border: 1px solid #BB86FC;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
-  background-color: #121212;
+.contents {
+    background-color: brown;
+    width: 100vw;
+    height: 100vh;
+    animation: slideUp 1s;
+    
+    display:flex;
+    flex-direction: row;
 }
 
-button:hover {
-  background-color: #212121;
-}
+.info {
+    float:left;
+    text-align: center;
+    width: 60%;
+    border-right: solid black 1vw;
+   
+    font-family: "Michroma";
+    font-size: 2vw;
 
-div.info {
-  min-width: 35%;
-  padding: 0 1em;
-  border-radius: 0.5em;
-  border: 0.09em solid #BB86FC;
-  text-align: center;
+    transform: translate(-100%, 0);
+    animation: slideInLeft 1s forwards;
+    animation-delay: 3s;
 }
-
-ul {
-  padding: 0;
-  list-style-type: none;
+.subtext {
+    font-size: 1.5vw;
 }
-
-li {
-  font: normal normal bold 1.3vw Open Sans;
-}
-
 a {
-  color: #BB86FC;
+    color: black;
+}
+.nav {
+    float: right;
+    text-align: right;
+    width:40%;
+}
+.question {
+    font-family: "Michroma";
+    font-size: 6vw;
+    color: black;
+    
+    text-align: right;
+    margin: 0;
+
+    transform: translate(100vw,0);
+    animation: slideInRight 1s forwards;
+    animation-delay: 1.3s;
+}
+.answers {
+    list-style-type: none;
+
+    font-family: "Michroma";
+    font-size: 4vw;
+    color: black;
+}
+
+.tab {
+    margin-left: auto;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+    transform: translate(100vw,0);
+    animation: slideInRight 1s forwards;
+}
+.tab:hover {
+    cursor: pointer;
+    font-size: 4.3vw;
+}
+.tab:nth-of-type(1) { animation-delay: 2.3s; }
+.tab:nth-of-type(2) { animation-delay: 2.5s; }
+.tab:nth-of-type(3) { animation-delay: 2.7s; }
+
+
+@keyframes slideUp {
+    0% {
+        transform: translate(0vw, 100vh) 
+    }
+    100% {
+        transform: translate(0vw, 0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translate(100vw, 0);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translate(-100%, 0);
+    }
+    100% {
+        transform: translate(0,0);
+    }
 }

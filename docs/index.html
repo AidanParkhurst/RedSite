@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>Aidan Parkhurst</title>
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow">
-      <link rel="stylesheet" href="main.css">  
-  </head>
+<head>
+    <title> Aidan Parkhurst </title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet'>
+</head>
 
-  <body>
-    <main id="app">
-      <h1>Aidan Parkhurst</h1>
-  
-      <div class="menu">
-        <button
-        v-for="(header, index) in tabs"
-        :style="(current === index) ? 'background-color: #BB86FC; color: #000000' : ''"
-        v-on:click="current = index">
-            {{header}}
-        </button>
-      </div>
-
-      <div class="info">
-        <!--Student Tab-->
-        <ul v-if="current === 0">
-          <li> Student at <a href="https://www.bu.edu/" target="_blank">Boston University</a> </li>
-          <li> College of Arts and Sciences </li>
-          <li> 2021-2025 </li>
-        </ul>
-        
-        <!--Programmer Tab-->
-        <ul v-if="current === 1">
-          <li> <a href="https://www.codeninjas.com" target="_blank">Code Ninjas</a> Instructor </li>
-          <li> DuckScheduler Front End Developer </li>
-          <li> PHP Developer for <a href="https://signup.bergen.org" target="_blank">BCA Student Dashboard</a> </li>            
-          <li>
-            <a href="https://bccls.libcal.com/event/6114184" target="_blank">Volunteer Teacher</a> for
-            <a href="https://www.hasbrouckheightslibrary.org" target="_blank">HH Library</a>
-          </li>
-          <li> Passionate Personal Researcher </li>
-          <li> <a href="Resume.pdf" download>Resume</a> </li>
-        </ul>
-        
-        <!--Contact Tab-->
-        <ul v-if="current === 2">
-          <li> <a href="mailto:aidanp@rkhur.st">aidanp@rkhur.st</a> </li>
-        </ul>
-      </div>
-
-    </main>
-  </body>
-
-  <script src="https://unpkg.com/vue@3.2.33/dist/vue.global.prod.js"></script>
-  <script src="main.js"></script>
+<body id="app">
+    <div class="nameplate">
+        <h1>aidan</h1>
+        <h1>parkhurst</h1>
+    </div>
+    <div class="contents">
+        <div class="info">
+            <div v-if="current === 0">
+                <p> I'm currently a student at Boston University, pursuing my BA in Computer Science. </p>
+                <p class="subtext">
+                    My programming journey started much earlier though: At 12 years old, my love for videogames
+                    inspired me to attend "Summertech," where I started developing my skills and passion for coding.
+                    I later refined and built upon these skills in a specialized highschool for CS: Bergen County Academies.
+                    Moving forward, I hope to be a lifelong student, learning and growing alongside the impactful,
+                    creative field of computing. 
+                </p>
+            </div>
+            <div v-if="current === 1">
+                <p>
+                    For my professional experience, 
+                    see my <a href="AidanP Resume.pdf">Resume</a>, 
+                    or my <a href="https://github.com/aidanparkhurst">Github</a>.
+                </p>
+                <p class="subtext">
+                    Beyond that, I love to make and break games. Whether I'm coding them myself, or digging through
+                    someone else's assembly, my passion for games and gamehacking is still a driving force in my programming journey.
+                    Occasionally, I code tools to solve problems in my day to day, or websites like this.
+                </p>
+            </div>
+            <div v-if="current === 2">
+                <p>
+                    I'm a son, a brother, and a friend. <br>
+                    To me, a good life means sharing happiness and understanding whenever I can.
+                </p>
+                <p class="subtext">
+                    Apart from my screen, I love to get some fresh air with friends. Recently I've enjoyed hiking in New Hampshire,
+                     lounging in the Boston Commons, and cruising down the steepest hills I can find on my longboard.
+                    I'm also passionate about and inspired by art. Some of my favorite memories ever are in breathtaking Museums,
+                    and chaotic crowds at live concerts.
+                    Lastly, I also practice jiujitsu, a martial art focused on grappling. It's had tremendous positive impact on my
+                    mental and physical health, and I've made meaningful friendships with lots of my training partners.
+                </p>
+            </div>
+        </div>
+        <div class="nav">
+            <h2 class="question">who?</h2>
+            <ul class="answers">
+                <li v-for="(tab, index) in tabs"
+                :style="(current === index) ? 'text-decoration: underline' : ''"
+                v-on:click="current = index"
+                class="tab">
+                    {{tab}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+    
+<script src="https://unpkg.com/vue@3.2.33/dist/vue.global.prod.js"></script>
+<script src="main.js"></script>
 </html>
