@@ -1,7 +1,18 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
 body {
     margin: 0;
     background-color: black;
     overflow: hidden;
+
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nameplate {
