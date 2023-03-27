@@ -9,8 +9,10 @@ body {
     flex-direction: row;
     gap: 6vw;
     margin: 0;
-   
-    animation: slideUp ease-in-out 1.4s;
+    height: auto;
+
+    transform: translate(0vw, 100vh);
+    animation: slideUp ease-in-out 1.4s forwards;
 }
 h1 {
     font-family: "Michroma";
@@ -25,10 +27,13 @@ h1 {
     background-color: brown;
     width: 100vw;
     height: 100vh;
-    animation: slideUp 1s;
+
+    transform: translate(0vw, 100vh);
+    animation: slideUp 1s forwards;
     
     display:flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
 .info {
@@ -96,7 +101,7 @@ a {
         transform: translate(0vw, 100vh) 
     }
     100% {
-        transform: translate(0vw, 0);
+        transform: translate(0vw, 0vh);
     }
 }
 
