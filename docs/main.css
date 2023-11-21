@@ -1,5 +1,4 @@
 html {
-    overflow: hidden;
     height: 100%;
 }
 
@@ -21,7 +20,7 @@ body {
     gap: 6vw;
     margin: 0;
     height: auto;
-
+    padding-left: 2%;
     transform: translate(0vw, 100vh);
     animation: slideUp ease-in-out 1.4s forwards;
 }
@@ -47,33 +46,76 @@ h1 {
     overflow: hidden;
 }
 
+.title {
+    background-color: brown;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    border: brown solid 3px;
+    width: 1px;
+    background: black;
+    border-radius: 10px;
+}
+  
 .info {
     float:left;
     text-align: center;
-    width: 60%;
-    border-right: solid black 1vw;
-   
-    font-family: "Michroma";
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 5%;
+    width: 67%;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    background-color: black;
+    border-top: solid brown 0.5vw;
+    border-radius: 0 15px 15px 0;
+    font-family: "Red Hat Display";
     font-size: 2vw;
+    color: brown;
 
     transform: translate(-100%, 0);
     animation: slideInLeft 1s forwards;
     animation-delay: 3s;
+
 }
 .subtext {
     font-size: 1.5vw;
+    color: brown;
 }
+
+img {
+    border: brown solid 2px;
+}
+
 a {
-    color: black;
+    color: brown;
+    text-decoration: solid underline brown 2px;
+    font-weight: bold;
 }
 .nav {
     float: right;
     text-align: right;
-    width:40%;
+    width:33%;
+    padding: 0;
 }
 .question {
     font-family: "Michroma";
-    font-size: 6vw;
+    font-size: 5vw;
     color: black;
     
     text-align: right;
@@ -85,14 +127,14 @@ a {
 }
 .answers {
     list-style-type: none;
-
     font-family: "Michroma";
-    font-size: 4vw;
+    font-size: 3vw;
     color: black;
 }
 
 .tab {
-    margin-left: auto;
+    border-radius: 15px 0 0 15px;
+    
     transition-property: font-size;
     transition-duration: 0.5s;
     transform: translate(100vw,0);
@@ -100,7 +142,8 @@ a {
 }
 .tab:hover {
     cursor: pointer;
-    font-size: 4.3vw;
+    font-size: 3.3vw;
+    background-color: #ac3030;
 }
 .tab:nth-of-type(1) { animation-delay: 2.3s; }
 .tab:nth-of-type(2) { animation-delay: 2.5s; }

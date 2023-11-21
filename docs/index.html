@@ -3,6 +3,10 @@
 <head>
     <title> Aidan Parkhurst </title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet'>
 </head>
 
@@ -14,50 +18,101 @@
     <div class="contents">
         <div class="info">
             <div v-if="current === 0">
-                <p> I'm currently a student at Boston University, pursuing my BA in Computer Science. </p>
-                <p class="subtext">
-                    My programming journey started much earlier though: At 12 years old, my love for videogames
-                    inspired me to attend "Summertech," where I started developing my skills and passion for coding.
-                    I later refined and built upon these skills in a specialized highschool for CS: Bergen County Academies.
-                    Moving forward, I hope to be a lifelong student, learning and growing alongside the impactful,
-                    creative field of computing. 
-                </p>
+                <p class="title"> I'm pursuing a BA in Computer Science at Boston University. </p>
+                    <div style="display: flex; flex-direction: row; width: 75%; margin: 0 auto;">
+                        <p class="subtext" style="width:50%">
+                            I've studied: 
+                        </p>
+                        <p class="subtext" style="font-size: 1.2vw;">
+                        <i>
+                            Intro to CS 1&2, Combinatoric Structures, Algorithms, Computational Systems,
+                            Geometric Algorithms, Probability in Computing, Computer Languages, 
+                            Foundations of Data Science </i> and <i>The Theory of Computation
+                        </i>
+                        </p>
+                    </div>
+                    <p class="subtext">
+                        But the courses I've enjoyed most have been
+                        <i>Contemporary Art, Cosmology,</i> and <i>The Evolution of the Human Diet</i>
+                    </p>
+                <p class="title"> I also help run the BU Brazilian Jiujitsu club. </p>
+                    <p class="subtext">
+                        Jiujitsu is a martial art focused on grappling. Through jiujitsu I've gained athleticism
+                        and confidence, and running the club has allowed me to practice my management and graphic design skills. 
+                    </p>
+                    <img src="assets/jiujitsu club.png" style="max-width: 75vw;"/>
+                    <p class="subtext">
+                        I'm proud to say that beyond our social and welcoming culture, BUBJJ is also a competitive force to be reckoned with-
+                        taking home first place in every collegiate tournament I've participated in thus far. For more updates on the club,
+                        check out our <a href="https://www.instagram.com/bostonubjj/">Instagram</a>
+                    </p>
             </div>
             <div v-if="current === 1">
-                <p>
-                    For my professional experience, 
-                    see my <a href="AidanP Resume.pdf">Resume</a>, 
-                    or my <a href="https://github.com/aidanparkhurst">Github</a>.
-                </p>
-                <p class="subtext">
-                    Beyond that, I love to make and break games. Whether I'm coding them myself, or digging through
-                    someone else's assembly, my passion for games and gamehacking is still a driving force in my programming journey.
-                    Occasionally, I code tools to solve problems in my day to day, or websites like this.
-                </p>
+                <p class="title"> Professional Work </p>
+                    <p class="subtext">
+                        I've worked professionally on front end, back end, and game development.
+                        Additionally, I have years of experience both volunteering and working as a programming instructor.
+                        If you're interested in learning more, I've detailed specifics in my <a href="assets/AidanP_Resume.pdf">Resume</a>. 
+                        Alternatively, you can read my code on <a href="https://github.com/aidanparkhurst">Github</a>. 
+                    </p>
+                    <p class="subtext">
+                        If you want to work with me, send me an email at <a href="mailto:aidanp@rkhur.st">aidanp@rkhur.st</a>.
+                    </p>
+                <p class="title"> Making Games </p>
+                    <p class="subtext">
+                        Like many, I was inspired to learn coding by my love for video games. It's been 9 years, and a whole lot of math classes
+                        since I started on that journey, but I am still passionate about creating my own games. Along the way, I've made lots of
+                        little games (Like <a href="https://aidanparkhurst.github.io/Wave">Wave</a>) But within the last 3 years, I've made a more focused
+                        effort to grow as an illustrator, story-teller, and game developer. I'm super excited to share the results of these efforts
+                         soon, but until then I'll leave you with some teaser concept art:
+                        
+                         <img src="assets/fewareas.png" style="max-width:100%; max-height:100%;"/>
+                    </p>
+                <p class="title"> Breaking Games </p>
+                    <p class="subtext">
+                        Just as I love making games, I love seeing how other people make their games. Working backwards is a
+                        fascinating way to understand the development process, and it feels like a superpower when I can dig
+                        through someone else's assembly code to understand a tough boss, or find an exploit to become overpowered. 
+                        Over on my <a href="https://github.com/aidanparkhurst/Than0s">Github</a>, you can read a sample of a CS:GO
+                        cheat I made. That project was beyond fun, and helped me solidify a deep understanding of memory manipulation
+                        and software decompiling
+                    </p>
             </div>
             <div v-if="current === 2">
-                <p>
-                    I'm a son, a brother, and a friend. <br>
-                    To me, a good life means sharing happiness and understanding whenever I can.
-                </p>
-                <p class="subtext">
-                    Apart from my screen, I love to get some fresh air with friends. Recently I've enjoyed hiking in New Hampshire,
-                     lounging in the Boston Commons, and cruising down the steepest hills I can find on my longboard.
-                    I'm also passionate about and inspired by art. Some of my favorite memories ever are in breathtaking Museums,
-                    and chaotic crowds at live concerts.
-                    Lastly, I also practice jiujitsu, a martial art focused on grappling. It's had tremendous positive impact on my
-                    mental and physical health, and I've made meaningful friendships with lots of my training partners.
-                </p>
+                <p class="title"> I'm a son, a brother, and a friend. </p>
+                    <p class="subtext">
+                        I couldn't be the man I am today, or the man I will be, without the support I've received from
+                        family, friends, teachers, and competitors. I wouldn't be myself if the people in my life hadn't
+                        shaped me, and I want to express my sincere gratitude for that.
+                    </p>
+                <p class="title"> To me, a good life means sharing happiness and understanding. </p>
+                    <p class="subtext">
+                        I love to get some fresh air, longboarding or hiking with friends and family.
+                        <img src="assets/beautifulhike.jpg" style="max-width: 50vw;"/>
+                    </p>
+                    <p class="subtext">
+                        I'm also passionate about and inspired by art. Some of my all time favorite memories are in breathtaking Museums,
+                        and chaotic concert crowds.
+                        <img src="assets/museum.jpg" style="max-width: 40vw;"/>
+                    </p>
+                    <p class="subtext">
+                        Lastly, I'd be remiss to forget my adorable pets, who keep my home extra cuddly.
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 0 auto;">
+                            <img src="assets/bandit.jpg"style="max-width: 20vw;"/>
+                            <img src="assets/mister.png"style="max-width: 20vw;"/>
+                            <img src="assets/maggie.png"style="max-width: 20vw;"/>
+                        </div>
+                    </p>
             </div>
         </div>
         <div class="nav">
             <h2 class="question">who?</h2>
             <ul class="answers">
                 <li v-for="(tab, index) in tabs"
-                :style="(current === index) ? 'text-decoration: underline' : ''"
-                v-on:click="current = index"
+                :style="(current === index) ? 'text-decoration: solid underline black 4px' : ''"
+                v-on:click="current=index; resetScroll()"
                 class="tab">
-                    {{tab}}
+                   {{tab}}
                 </li>
             </ul>
         </div>
